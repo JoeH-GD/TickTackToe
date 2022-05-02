@@ -31,7 +31,7 @@ struct TCoord {
 struct TGame {
 	const size_t SIZE = 3;
 	TCell** ppField = nullptr;
-	TProgress progress = IN_PROGRESS;
+	TProgress progress = IN_PROGRESS; //сразу выставляем статус игры "в процессе"
 	size_t turn{ 0U }; //пошагово инкрементируется, четные - человек, нечетные - ПК
 	TCell human;
 	TCell ai;
